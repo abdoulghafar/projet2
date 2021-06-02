@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 20px;
 }
 
 /* header */
@@ -12,7 +12,7 @@ nav{
 }
 
 nav img{
-    height: 60px;
+    height: 40px;
 }
 
 nav ul{
@@ -21,5 +21,42 @@ nav ul{
 }
 nav li{
     margin: 0 10px 0 20px;
-    font-size: small;
+    font-size: 14px;
+    color: #0065FC;
+    font-weight: bold;
+}
+nav li:hover{
+        background-color: yellow;
+      
+}
+
+/* section information */
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+p{
+    font-size: 14px;
+    font-weight: 100px;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+span i{
+    height: 30px;
+    background-color: #F2F2F2;
+    font-size: 20px;
+    
+}
+span input{
+    height: 24px;
+}
+span button{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color:#0065FC ;
+    color: white;
+    height: 30px;
 }
