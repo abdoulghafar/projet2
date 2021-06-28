@@ -1,7 +1,4 @@
 body header, main{
-    display:flex; 
-    flex-direction:column; 
-    justify-content: center;
     font-family: 'Raleway', sans-serif;
     margin: 50px;
     
@@ -12,28 +9,63 @@ html{
 }
 
 /* header */
-nav{
+
+#nav-items{
     display: flex;
+    flex-wrap:  wrap;
     justify-content: space-between;
     align-items: center;
     
 }
+/* Responsive layout - makes a one column layout instead of a two-column layout 
+@media (max-width: 800px) {
+    #nav-items {
+      flex-direction: column;
+    }
+  }*/
 
-nav img{
+#nav-items img{
     height: 40px;
-
 }
 
-nav ul{
+#nav-items a{
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    height: 15px;
+}
+
+#nav-items a:hover{
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+}
+
+#nav-items a.active{
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+}
+
+#nav-items ul li a,
+#nav-items ul li a:after,
+#nav-items ul li a:before {
+  transition: all .5s;
+}
+
+#nav-items ul{
     display: flex;
-    list-style: none;
+    flex-wrap: wrap;
+    
 }
-nav li{
+#nav-items li{
     margin: 0 10px 0 20px;
     font-size: 14px;
-    color: #0065FC;
-    font-weight: 300;
+    font-weight: 600;
     cursor: pointer;
+    list-style: none;
+}
+.nav-item-inscription{
+    color: #0065FC;
 }
 
 /* section information */
@@ -70,6 +102,7 @@ nav li{
     font-weight: bold;
     
 }
+
 *:focus {
     outline: none;
 }
@@ -85,8 +118,10 @@ nav li{
 }
 .filtres{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
     align-items: center;
+  
 }
 .filtres p{
     font-weight: bold;
@@ -94,6 +129,8 @@ nav li{
 }
 .filtres-ul  {
     display: flex;
+    flex-wrap: wrap;
+ 
     border-radius: 56px;
     box-shadow: #F2F2F2;
     
@@ -150,6 +187,7 @@ nav li{
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     height: 200%;
     background-color: #F2F2F2;
@@ -171,10 +209,12 @@ nav li{
 /************* section hebergements ********************/
 .hebergements{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
 
 }
+
 .hebergementsMarseille{
     
     background-color: #F2F2F2;
@@ -195,8 +235,16 @@ nav li{
 }
 .hebergementsImages{
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
 }
+/*
+@media(mobile){
+    .hebergementsImages{
+        flex-direction: column;
+      }
+    }
+*/
 .hebergementsImages span{
     margin: 0 15px 0 15px;
 } 
@@ -251,6 +299,7 @@ nav li{
 }
 .infopopulaire{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 30px;
@@ -304,6 +353,7 @@ nav li{
 }
 .activitesMarseille{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
