@@ -354,16 +354,34 @@ html{
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    flex-shrink: 1;
     padding: 5px;
     
 }
 
 .box-img-populaires .detailsPopulaires{
-    
+   
     margin-top: 0;
     font-size: small;
+    margin-left: 10px;
 }
+
+/*
+.info-hôtel{
+    display: inline-flex;
+    flex-wrap: wrap;
+}*/
+ 
+/*
+.box-img-populaires .detailsPopulaires h5{
+    font-size: small;
+    padding-left: 10px;
+    
+}*/
+/*
+.box-img-populaires .detailsPopulaires span{
+    display: inline-block;
+    font-size: small;
+}*/
 
 /**************** Activités à Marseille ***************************/
 .activites{
